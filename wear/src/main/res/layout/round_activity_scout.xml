@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scout.climber.climbersscout.Scout"
+    tools:deviceIds="wear_round">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/climber1"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Climber&apos;s Scout"
+                android:id="@+id/title"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textColor="#0f0101"
+                android:singleLine="false"
+                android:paddingLeft="5dp"
+                android:paddingTop="20dp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LATITUDE: 0"
+                android:id="@+id/latLabel"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#040000"
+                android:paddingTop="3dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LONGITUDE: 0"
+                android:id="@+id/lngLabel"
+                android:layout_below="@+id/latLabel"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#040000"
+                android:paddingTop="3dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALTITUDE: 0 m"
+                android:id="@+id/altLabel"
+                android:layout_below="@+id/lngLabel"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#040000"
+                android:paddingTop="3dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BEARING: 000"
+                android:id="@+id/bearingLabel"
+                android:layout_below="@+id/altLabel"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#040000"
+                android:paddingTop="3dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACCURACY: 0 m"
+                android:id="@+id/accLabel"
+                android:layout_below="@+id/bearingLabel"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#040000"
+                android:paddingTop="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPEED: 0 m/s"
+                android:id="@+id/speedLabel"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#040000"
+                android:paddingTop="3dp"
+                android:layout_below="@+id/accLabel" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
